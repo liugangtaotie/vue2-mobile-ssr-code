@@ -36,7 +36,7 @@ module.exports = {
     },
     externals: TARGET_NODE
       ? nodeExternals({
-          allowlist: [/\.css$/],
+          allowlist: [/\.css$/, /vant\/lib/],
         })
       : undefined,
     optimization: {
