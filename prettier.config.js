@@ -6,14 +6,14 @@ module.exports = {
   // 大括号内的首尾需要空格
   bracketSpacing: true,
   // 一行最多 100 字符
-  printWidth: 80,
+  printWidth: 100,
   // tab 用两个空格代替
   tabWidth: 2,
   // 行位是否使用分号，默认为true
   semi: true,
   // 使用双引号
   singleQuote: false,
-  parser: "babylon",
+  parser: "babel",
   // 在Vue文件中缩进脚本和样式标签。
   vueIndentScriptAndStyle: true,
   // jsx 不使用单引号，而使用双引号
