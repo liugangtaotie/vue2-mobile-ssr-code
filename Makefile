@@ -3,7 +3,7 @@ default: help
 
 # build all theme
 dev:
-	npm start
+	npm run serve
 
 remove:
 	npm run remove
