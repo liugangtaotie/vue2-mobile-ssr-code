@@ -20,7 +20,7 @@ const renderer = createBundleRenderer(serverBundle, {
 });
 
 // 中间件处理静态文件请求
-app.use(express.static("./dist/client", { index: false }));
+app.use("/hcn-home-mobile", express.static("./dist/client"));
 
 // 路由的处理交给vue
 app.get("*", async (req, res) => {

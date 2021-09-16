@@ -43,7 +43,7 @@ const routes: Array<RouteConfig> = [
 //将来每次用户请求都需要一个router 实例
 export default function createRouter() {
   return new VueRouter({
-    base: "/hcn-home-mobile/",
+    base: process.env.BASE_URL,
     mode: "history",
     routes,
   });

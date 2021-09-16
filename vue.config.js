@@ -12,7 +12,7 @@ function resolve(dir) {
 }
 
 module.exports = {
-  publicPath: "./",
+  publicPath: "/hcn-home-mobile/",
   assetsDir: "assets",
   outputDir: "./dist/" + target,
   configureWebpack: () => ({
