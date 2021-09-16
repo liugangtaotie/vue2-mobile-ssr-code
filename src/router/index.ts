@@ -34,6 +34,16 @@ const routes: Array<RouteConfig> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "person" */ "@VIE/Person.vue"),
   },
+  /**
+   * 404 Page
+   */
+  {
+    path: "*",
+    meta: {
+      title: "页面找不到了～！～",
+    },
+    component: () => import("@VIE/404.vue"),
+  },
 ];
 
 // const router = new VueRouter({
