@@ -25,12 +25,10 @@
       <van-grid-item v-for="value in 4" :key="value" icon="photo-o" text="Text" />
     </van-grid>
 
-    <div class="mt20 pd10 t1">从vuex的global module中获取的state： {{ JSON.stringify(user) }}</div>
-
     <van-divider />
 
     <div class="flex flex_center single">
-      global 中 store的count数据 <span class="ml20 f30 t2">{{ num }}</span>
+      store的count数据 <span class="ml20 f30 t2">{{ num }}</span>
     </div>
 
     <div class="flex flex_center">
@@ -56,11 +54,7 @@ export default class Home extends Vue {
   private user = "";
   private num = 0;
 
-  mounted() {
-    this.num = this.$store.state.global.num;
-
-    this.user = this.$store.state.global.user.name;
-  }
+  mounted() {}
 
   // 跳转sub-first
   gotoSubOne() {
@@ -73,12 +67,12 @@ export default class Home extends Vue {
 
   // +1
   onClickAdd() {
-    this.$store.commit("global/setGlobalState", { num: ++this.num });
+    ++this.num;
   }
 
   // -1
   onClickSub() {
-    this.$store.commit("global/setGlobalState", { num: --this.num });
+    --this.num;
   }
 }
 </script>
