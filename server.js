@@ -40,8 +40,8 @@ app.get("*", async (req, res) => {
   }
 });
 
-const port = 8080;
+const port = 8010;
 
 app.listen(port, () => {
-  console.log(`渲染服务器启动成功！端口号为${port}`);
+  console.log(`渲染服务器启动成功！查看：localhost:${port}`);
 });
