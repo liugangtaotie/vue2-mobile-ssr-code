@@ -46,11 +46,7 @@ const routes: Array<RouteConfig> = [
   },
 ];
 
-// const router = new VueRouter({
-//   routes,
-// });
-
-//将来每次用户请求都需要一个router 实例
+// 将来每次用户请求都需要一个router 实例
 export default function createRouter() {
   return new VueRouter({
     base: process.env.BASE_URL,
